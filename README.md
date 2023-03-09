@@ -10,5 +10,5 @@ https://spacenew-cryptocurrency-track-app-n3g4ex.streamlit.app/
 2. Выбираем дату начала и окончания отслеживания
 3. Нажимаем кнопку "Track" для построения барчарта.
 
+![alt text](https://github.com/spacenew/cryptocurrency_track/blob/main/images/crypto.jpg?raw=true)
 
-![image](https://user-images.githubusercontent.com/68110781/224052586-3566073d-3c1c-4fee-b4a0-114a2e75d572.png)
