@@ -17,10 +17,8 @@ ASSET_ENDPOINT = 'https://api.coincap.io/v2/assets?limit=2000'
 def get_currencies_id():
     response = requests.get(ASSET_ENDPOINT)
     data = response.json()['data']
-    currencies = {currency['id']: currency['name'] for currency in data}
-    list_currencies_id = list(currencies.keys())
     
-    return list_currencies_id
+    return [currency['id'] for currency in data]
 
 def format_df(data):
     
@@ -74,7 +72,6 @@ def run_crypto_tracker():
         }
         response = requests.get(f'{API_ENDPOINT}/{currency_id}/history', params=payload)
 
-        print(response)
         data = response.json()['data']
 
         if response.status_code == 200: 
